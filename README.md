@@ -1,2 +1,18 @@
 # Exercise-HTML-0.1.-0.6.
 Latihan Belajar Dasar HTML
+0.4.
+Here is a simple flow chart:
+
+```mermaid
+sequenceDiagram;
+    Browser ->>+ Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    Server -->>- Browser : HTML document
+    Browser ->>+ Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server -->>- Browser: the CSS file
+    Browser ->>+ Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    Server -->- Browser: the JavaScript file
+    Note right of Browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+    Browser ->>+ Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server ->>- Browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
+    Note right of Browser: The browser executes the callback function that renders the notes
+```
