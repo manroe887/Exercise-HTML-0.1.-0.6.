@@ -13,7 +13,7 @@ sequenceDiagram;
     Server -->- Browser: the JavaScript file
     Note right of Browser: The browser starts executing the JavaScript code that fetches the JSON from the server
     Browser ->>+ Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
-    Server ->>- Browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
+    Server -->- Browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     Note right of Browser: The browser executes the callback function that renders the notes
 ```
 
@@ -23,5 +23,5 @@ Simple Diagram of Single-Page App:
 ```mermaid
 sequenceDiagram;
     Browser ->>+ Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
-    SServer -->- Server: 201 Created ({"message":"note created"})
+    Server ->>- Browser: 201 Created ({"message":"note created"})
 ```
