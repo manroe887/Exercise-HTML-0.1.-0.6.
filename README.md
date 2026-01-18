@@ -23,5 +23,5 @@ Simple Diagram of Single-Page App:
 ```mermaid
 sequenceDiagram;
     Browser ->>+ Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
-    Server ->>- Browser: 201 Created ({"message":"note created"})
+    Server -->- Browser: 201 Created ({"message":"note created"})
 ```
