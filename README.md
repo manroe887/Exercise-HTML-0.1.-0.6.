@@ -16,3 +16,10 @@ sequenceDiagram;
     Server ->>- Browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     Note right of Browser: The browser executes the callback function that renders the notes
 ```
+
+**0.5. (Diagram situation where the user goes to the single-page app)**
+Simple Diagram of Single-Page App:
+
+```mermaid
+sequencediagram;
+    Browser ->>+ Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
