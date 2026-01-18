@@ -1,7 +1,7 @@
 # Exercise-HTML-0.1.-0.6.
 Latihan Belajar Dasar HTML
-0.4.
-Here is a simple flow chart:
+**0.4. (New note diagram)**
+Simple Diagram:
 
 ```mermaid
 sequenceDiagram;
