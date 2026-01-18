@@ -24,3 +24,7 @@ Simple Diagram of Single-Page App:
 sequenceDiagram;
     Browser ->>+ Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 ```
+```mermaid
+graph TD;
+    Browser -> Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+```
